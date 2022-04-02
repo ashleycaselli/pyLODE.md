@@ -1,7 +1,15 @@
-from .utils import *
-from .rdf_elements import *
-from .ontdoc import OntDoc, PylodeError
-from .version import __version__
+__version__ = "2.13.2"
 
+from .common import *
+from .profiles import OntDoc, Prof, VocPub, NMPF, PROFILES, RDF_MEDIA_TYPES
 
-__all__ = ["__version__"]
+__all__ = [
+    "__version__",
+    "OntDoc",
+    "Prof",
+    "VocPub",
+    "NMPF",
+    "PROFILES",
+    "RDF_MEDIA_TYPES",
+    "MakeDocco"
+]
