@@ -3,10 +3,9 @@
 .. image:: https://badge.fury.io/py/pyLODE.svg
     :target: https://badge.fury.io/py/pyLODE
 
-pyLODE
+pyLODE.md
 ******
-An OWL ontology documentation tool using Python and templating, based on
-LODE.
+An OWL ontology Markdown documentation tool forked from pyLODE v2.13.3 (https://github.com/RDFLib/pyLODE/releases/tag/2.13.3).
 
 In addition to making human-readable forms of ontologies/taxonomies, pyLODE encourages ontology annotation *best
 practice* by only producing good results for well documented inputs! pyLODe defines what it considers w'well documented'

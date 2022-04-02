@@ -114,6 +114,7 @@ venv.bak/
 # temp dirs
 output_files/
 
-/pylode/examples/ogc/excluded/
+/pylodemd/examples/ogc/excluded/
 
-pylode/_version.py
+pylodemd/_version.py
+bin/

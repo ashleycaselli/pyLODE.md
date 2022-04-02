@@ -2,8 +2,10 @@
 # -*- coding: latin-1 -*-
 import codecs
 import os
+
 from setuptools import setup, find_packages
-from pylode import __version__
+
+from pylodemd import __version__
 
 
 def open_local(paths, mode='r', encoding='utf8'):
@@ -21,26 +23,25 @@ with open_local(['requirements.txt']) as req:
     install_requires = req.read().split("\n")
 
 setup(
-    name='pyLODE',
+    name='pyLODEmd',
     packages=find_packages(),
-    package_dir={'pylode': 'pylode', 'img': 'img'},
+    package_dir={'pylodemd': 'pylodemd', 'img': 'img'},
     package_data={
-        'pylode': ['templates/*.html', 'templates/*/*.html', 'templates/*.md', 'templates/*/*.md', 'style/*.css'],
+        'pylodemd': ['templates/*.html', 'templates/*/*.html', 'templates/*.md', 'templates/*/*.md', 'style/*.css'],
         'img': ['pyLODE-250.png']
     },
     version=__version__,
-    use_scm_version={'write_to': 'pylode/_version.py'},
-    description='An OWL ontology documentation tool using Python and templating, based on LODE.',
-    author='Nicholas J. Car',
-    author_email='nicholas.car@surroundaustralia.com',
-    url='https://github.com/rdflib/pyLODE',
-    download_url='https://github.com/rdflib/pyLODE/archive/v{:s}.tar.gz'.format(__version__),
+    use_scm_version={'write_to': 'pylodemd/_version.py'},
+    description='An OWL ontology Markdown documentation tool forked from pyLODE v2.13.3 (https://github.com/RDFLib/pyLODE/releases/tag/2.13.3).'
+    author='Ashley Caselli',
+    author_email='ashley.caselli@unige.ch',
+    url='https://github.com/ashleycaselli/pyLODE.md',
     license='LICENSE',
     keywords=['Semantic Web', 'OWL', 'ontology', 'template', 'Jinja2', 'documentation'],
     long_description=long_description,
     entry_points={
         'console_scripts': [
-            'pylode = pylode.cli:main',
+            'pylodemd = pylodemd.cli:main',
         ]
     },
     classifiers=[
@@ -60,8 +61,8 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     project_urls={
-        'Bug Reports': 'https://github.com/rdflib/pyLODE/issues',
-        'Source': 'https://github.com/rdflib/pyLODE/',
+        'Bug Reports': 'https://github.com/ashleycaselli/pyLODE.md/issues',
+        'Source': 'https://github.com/ashleycaselli/pyLODE.md',
     },
     install_requires=install_requires,
     long_description_content_type="text/x-rst"
