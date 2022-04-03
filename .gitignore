@@ -118,3 +118,4 @@ output_files/
 
 pylodemd/_version.py
 bin/
+node_modules/
