@@ -32,7 +32,7 @@ setup(
     },
     version=__version__,
     use_scm_version={'write_to': 'pylodemd/_version.py'},
-    description='An OWL ontology Markdown documentation tool forked from pyLODE v2.13.3 (https://github.com/RDFLib/pyLODE/releases/tag/2.13.3).'
+    description='An OWL ontology Markdown documentation tool forked from pyLODE v2.13.3 (https://github.com/RDFLib/pyLODE/releases/tag/2.13.3).',
     author='Ashley Caselli',
     author_email='ashley.caselli@unige.ch',
     url='https://github.com/ashleycaselli/pyLODE.md',
