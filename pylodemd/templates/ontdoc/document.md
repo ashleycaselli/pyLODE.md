@@ -1,4 +1,4 @@
-Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) {{ pylode_version }}
+Markdown documentation created by [pyLODE.md](http://github.com/ashleycaselli/pyLODE.md), a fork of [pyLODE](https://github.com/RDFLib/pyLODE) {{ pylode_version }}
 
 {{ metadata|safe }}
 {{ classes|safe }}
