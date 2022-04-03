@@ -1,5 +1,5 @@
-# this file runs pyLODe against the ontology, vocabulary and profile files in this dir
-from pylode.common import MakeDocco
+# this file runs pyLODE.md against the ontology, vocabulary and profile files in this dir
+from pylodemd.common import MakeDocco
 
 
 def main():
@@ -44,7 +44,6 @@ def main():
         h = MakeDocco(input_data_file=f, outputformat="md")
         h.document(destination=f.replace(".ttl", ".md"))
 
-
     # for these files, make a vocpub html & md output
     vocpub_files = [
         'agrif-testing.ttl',
@@ -61,7 +60,6 @@ def main():
         h.document(destination=f.replace(".ttl", ".vocpub.html"))
         h = MakeDocco(input_data_file=f, profile="vocpub", outputformat="md")
         h.document(destination=f.replace(".ttl", ".vocpub.md"))
-
 
     prof_files = [
         "ga-skos.ttl",
