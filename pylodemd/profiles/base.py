@@ -1,7 +1,8 @@
 import collections
 from itertools import chain
+
 from jinja2 import Environment, FileSystemLoader
-from rdflib import SDO, SKOS, OWL, URIRef, RDF, PROF, Literal, XSD, Graph, Namespace, FOAF, Graph
+from rdflib import SDO, SKOS, OWL, URIRef, RDF, PROF, Literal, XSD, Namespace, FOAF, Graph
 
 from pylodemd.common import TEMPLATES_DIR
 
@@ -73,7 +74,7 @@ class BaseProfile:
         curie = self._get_curie(uri)
 
         links = {
-            "md": f"[{curie}]({uri})",
+            "md": f"[{curie}]({uri.lower()})",
             "adoc": f"link:{uri}[{curie}]",
             "html": f'<a href="{uri}">{curie}</a>'
         }
