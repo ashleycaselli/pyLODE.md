@@ -1,3 +1,10 @@
+import shutil
+from collections import defaultdict
+from itertools import chain
+from pathlib import Path
+from typing import Dict
+from typing import Union
+
 import dominate
 from dominate.tags import (
     h2,
@@ -25,12 +32,6 @@ from dominate.tags import (
     dd,
 )
 from dominate.util import raw
-from collections import defaultdict
-from typing import Dict
-import shutil
-from itertools import chain
-from pathlib import Path
-from typing import Union
 from rdflib import Literal, Graph
 from rdflib.namespace import (
     DC,
@@ -113,9 +114,9 @@ class OntDoc:
         # make HTML doc with title
         t = None
         for s in chain(
-            self.ont.subjects(RDF.type, OWL.Ontology),
-            self.ont.subjects(RDF.type, PROF.Profile),
-            self.ont.subjects(RDF.type, SKOS.ConceptScheme),
+                self.ont.subjects(RDF.type, OWL.Ontology),
+                self.ont.subjects(RDF.type, PROF.Profile),
+                self.ont.subjects(RDF.type, SKOS.ConceptScheme),
         ):
             for o2 in self.ont.objects(s, DCTERMS.title):
                 t = str(o2)
@@ -165,19 +166,19 @@ class OntDoc:
 
         # name
         for s_, o in chain(
-            g.subject_objects(DC.title),
-            g.subject_objects(RDFS.label),
-            g.subject_objects(SKOS.prefLabel),
-            g.subject_objects(SDO.name),
+                g.subject_objects(DC.title),
+                g.subject_objects(RDFS.label),
+                g.subject_objects(SKOS.prefLabel),
+                g.subject_objects(SDO.name),
         ):
             g.add((s_, DCTERMS.title, o))
 
         # description
         for s_, o in chain(
-            g.subject_objects(DC.description),
-            g.subject_objects(RDFS.comment),
-            g.subject_objects(SKOS.definition),
-            g.subject_objects(SDO.description),
+                g.subject_objects(DC.description),
+                g.subject_objects(RDFS.comment),
+                g.subject_objects(SKOS.definition),
+                g.subject_objects(SDO.description),
         ):
             g.add((s_, DCTERMS.description, o))
 
@@ -192,7 +193,7 @@ class OntDoc:
             g.add((s_, RDF.type, OWL.Restriction))
 
         for s_ in chain(
-            g.subjects(OWL.unionOf, None), g.subjects(OWL.intersectionOf, None)
+                g.subjects(OWL.unionOf, None), g.subjects(OWL.intersectionOf, None)
         ):
             g.add((s_, RDF.type, OWL.Class))
 
@@ -224,9 +225,9 @@ class OntDoc:
         #
         # creator
         for s_, o in chain(
-            g.subject_objects(DC.creator),
-            g.subject_objects(SDO.creator),
-            g.subject_objects(SDO.author),
+                g.subject_objects(DC.creator),
+                g.subject_objects(SDO.creator),
+                g.subject_objects(SDO.author),
         ):
             g.remove((s_, DC.creator, o))
             g.remove((s_, SDO.creator, o))
@@ -235,8 +236,8 @@ class OntDoc:
 
         # contributor
         for s_, o in chain(
-            g.subject_objects(DC.contributor),
-            g.subject_objects(SDO.contributor),
+                g.subject_objects(DC.contributor),
+                g.subject_objects(SDO.contributor),
         ):
             g.remove((s_, DC.contributor, o))
             g.remove((s_, SDO.contributor, o))
@@ -244,7 +245,7 @@ class OntDoc:
 
         # publisher
         for s_, o in chain(
-            g.subject_objects(DC.publisher), g.subject_objects(SDO.publisher)
+                g.subject_objects(DC.publisher), g.subject_objects(SDO.publisher)
         ):
             g.remove((s_, DC.publisher, o))
             g.remove((s_, SDO.publisher, o))
@@ -252,9 +253,9 @@ class OntDoc:
 
         # indicate Agent instances from properties
         for o in chain(
-            g.objects(None, DCTERMS.publisher),
-            g.objects(None, DCTERMS.creator),
-            g.objects(None, DCTERMS.contributor),
+                g.objects(None, DCTERMS.publisher),
+                g.objects(None, DCTERMS.creator),
+                g.objects(None, DCTERMS.contributor),
         ):
             g.add((o, RDF.type, PROV.Agent))
 
@@ -269,10 +270,10 @@ class OntDoc:
             g.add((s_, SDO.affiliation, o))
 
     def _make_head(
-        self,
-        schema_org: Graph,
-        include_css: bool = True,
-        destination: Path = None
+            self,
+            schema_org: Graph,
+            include_css: bool = True,
+            destination: Path = None
     ):
         """Healper function for make_html(). Makes <head>???</head> content"""
         with self.doc.head:
@@ -339,9 +340,9 @@ class OntDoc:
         # get all ONT_PROPS props and their (multiple) values
         this_onts_props = defaultdict(list)
         for s_ in chain(
-            self.ont.subjects(predicate=RDF.type, object=OWL.Ontology),
-            self.ont.subjects(predicate=RDF.type, object=SKOS.ConceptScheme),
-            self.ont.subjects(predicate=RDF.type, object=PROF.Profile),
+                self.ont.subjects(predicate=RDF.type, object=OWL.Ontology),
+                self.ont.subjects(predicate=RDF.type, object=SKOS.ConceptScheme),
+                self.ont.subjects(predicate=RDF.type, object=PROF.Profile),
         ):
             iri = s_
             for p_, o in self.ont.predicate_objects(s_):
@@ -377,9 +378,9 @@ class OntDoc:
     def _make_schema_org(self):
         sdo = Graph()
         for ont_iri in chain(
-            self.ont.subjects(predicate=RDF.type, object=OWL.Ontology),
-            self.ont.subjects(predicate=RDF.type, object=SKOS.ConceptScheme),
-            self.ont.subjects(predicate=RDF.type, object=PROF.Profile),
+                self.ont.subjects(predicate=RDF.type, object=OWL.Ontology),
+                self.ont.subjects(predicate=RDF.type, object=SKOS.ConceptScheme),
+                self.ont.subjects(predicate=RDF.type, object=PROF.Profile),
         ):
             sdo.add((ont_iri, RDF.type, SDO.DefinedTermSet))
             for p_, o in self.ont.predicate_objects(ont_iri):
@@ -605,8 +606,8 @@ class OntDoc:
                     li(h4(a("Metadata", href="#metadata")))
 
                     if (
-                        self.toc.get("classes") is not None
-                        and len(self.toc["classes"]) > 0
+                            self.toc.get("classes") is not None
+                            and len(self.toc["classes"]) > 0
                     ):
                         with li():
                             h4(a("Classes", href="#classes"))
@@ -615,8 +616,8 @@ class OntDoc:
                                     li(a(c[1], href=c[0]))
 
                     if (
-                        self.toc.get("properties") is not None
-                        and len(self.toc["properties"]) > 0
+                            self.toc.get("properties") is not None
+                            and len(self.toc["properties"]) > 0
                     ):
                         with li():
                             h4(a("Properties", href="#properties"))
@@ -625,8 +626,8 @@ class OntDoc:
                                     li(a(c[1], href=c[0]))
 
                     if (
-                        self.toc.get("objectproperties") is not None
-                        and len(self.toc["objectproperties"]) > 0
+                            self.toc.get("objectproperties") is not None
+                            and len(self.toc["objectproperties"]) > 0
                     ):
                         with li():
                             h4(a(
@@ -638,8 +639,8 @@ class OntDoc:
                                     li(a(c[1], href=c[0]))
 
                     if (
-                        self.toc.get("datatypeproperties") is not None
-                        and len(self.toc["datatypeproperties"]) > 0
+                            self.toc.get("datatypeproperties") is not None
+                            and len(self.toc["datatypeproperties"]) > 0
                     ):
                         with li():
                             h4(a(
@@ -651,8 +652,8 @@ class OntDoc:
                                     li(a(c[1], href=c[0]))
 
                     if (
-                        self.toc.get("annotationproperties") is not None
-                        and len(self.toc["annotationproperties"]) > 0
+                            self.toc.get("annotationproperties") is not None
+                            and len(self.toc["annotationproperties"]) > 0
                     ):
                         with li():
                             h4(a(
@@ -664,8 +665,8 @@ class OntDoc:
                                     li(a(c[1], href=c[0]))
 
                     if (
-                        self.toc.get("functionalproperties") is not None
-                        and len(self.toc["functionalproperties"]) > 0
+                            self.toc.get("functionalproperties") is not None
+                            and len(self.toc["functionalproperties"]) > 0
                     ):
                         with li():
                             h4(a(

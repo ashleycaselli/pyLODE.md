@@ -108,9 +108,9 @@ class MakeDocco:
             raise Exception(
                 "If supplying an input RDF file, it must end with one of the following file type extensions: {}."
                     .format(
-                        ", ".join(RDF_FILE_EXTENSIONS)
-                    )
+                    ", ".join(RDF_FILE_EXTENSIONS)
                 )
+            )
         else:
             fmt = (
                 "json-ld"
@@ -132,7 +132,7 @@ class MakeDocco:
             fmt = (
                 "json-ld"
                 if media_type == "application/ld+json"
-                or media_type == "application/json"
+                   or media_type == "application/json"
                 else None
             )
 
@@ -221,7 +221,7 @@ class MakeDocco:
                 print(e)
                 raise Exception(
                     "The file you specified as 'destination' could not be written to. You specified {}."
-                                .format(destination))
+                        .format(destination))
 
         else:
             return p.generate_document()

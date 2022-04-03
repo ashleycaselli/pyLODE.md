@@ -1,16 +1,17 @@
-from typing import Union
-from pylodemd import __version__
-from pylodemd.common import TEMPLATES_DIR, STYLE_DIR
 import collections
-from os import path
-from itertools import chain
 import markdown
+import re
+from itertools import chain
 from jinja2 import Environment, FileSystemLoader
+from os import path
 from os.path import join
 from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import DC, DCTERMS, DOAP, OWL, PROF, PROV, RDF, RDFS, SDO, SKOS
+from typing import Union
+
+from pylodemd import __version__
+from pylodemd.common import TEMPLATES_DIR, STYLE_DIR
 from pylodemd.profiles.base import BaseProfile
-import re
 
 
 class OntDoc(BaseProfile):
@@ -791,7 +792,8 @@ class OntDoc(BaseProfile):
             # ranges
             for o in self.G.objects(subject=s, predicate=RDFS.range):
                 if type(o) != BNode:
-                    self.PROPERTIES[prop]["ranges"].append(self._make_formatted_uri(o, type="c"))  # ranges that are just classes
+                    self.PROPERTIES[prop]["ranges"].append(
+                        self._make_formatted_uri(o, type="c"))  # ranges that are just classes
                 else:
                     # range collections (unionOf | intersectionOf)
                     q = """

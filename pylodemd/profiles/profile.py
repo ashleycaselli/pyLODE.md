@@ -9,6 +9,7 @@ class Profile:
     This definition of Profiles is from The Profiles Vocabulary: https://www.w3.org/TR/dx-prof/ and objects created
     using this class are intended for use as prof:Profile instances.
     """
+
     def __init__(
             self,
             uri,

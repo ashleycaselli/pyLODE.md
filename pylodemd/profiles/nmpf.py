@@ -1,13 +1,14 @@
-from pylodemd import __version__
-from pylodemd.common import TEMPLATES_DIR, STYLE_DIR
 import collections
-from os import path
-from itertools import chain
 import markdown
+from itertools import chain
 from jinja2 import Environment, FileSystemLoader
+from os import path
 from os.path import join
 from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import DC, DCTERMS, DOAP, OWL, PROV, RDF, RDFS, SDO, SKOS
+
+from pylodemd import __version__
+from pylodemd.common import TEMPLATES_DIR, STYLE_DIR
 from pylodemd.profiles.base import BaseProfile
 
 
@@ -487,7 +488,8 @@ class NMPF(BaseProfile):
 
                 if p == DCTERMS.source or p == DC.source:
                     if str(o).startswith('http'):
-                        self.CLASSES[cls]["source"] = self._make_formatted_uri(o)  # '<a href="{0}">{0}</a>'.format(str(o))
+                        self.CLASSES[cls]["source"] = self._make_formatted_uri(
+                            o)  # '<a href="{0}">{0}</a>'.format(str(o))
                     else:
                         self.CLASSES[cls]["source"] = str(o)
 
@@ -895,16 +897,19 @@ class NMPF(BaseProfile):
                 if p == OWL.sameAs:
                     self.NAMED_INDIVIDUALS[ni]["sameAs"] = self._make_formatted_uri(o)
 
-                if p == URIRef('http://something/national-marine-planning-framework-policies#appliesToWholeMaritimeArea'):
+                if p == URIRef(
+                        'http://something/national-marine-planning-framework-policies#appliesToWholeMaritimeArea'):
                     self.NAMED_INDIVIDUALS[ni]['appliesToWholeMaritimeArea'] = str(o)
 
                 if p == URIRef('http://something/national-marine-planning-framework-policies#policyCode'):
                     self.NAMED_INDIVIDUALS[ni]['policyCode'] = str(o)
 
-                if p == URIRef('http://something/national-marine-planning-framework-policies#directsOtherProposalsInRelationToTopicActivity'):
+                if p == URIRef(
+                        'http://something/national-marine-planning-framework-policies#directsOtherProposalsInRelationToTopicActivity'):
                     self.NAMED_INDIVIDUALS[ni]['directsOther'] = str(o)
 
-                if p == URIRef('http://something/national-marine-planning-framework-policies#directsChapterTopicActivityProposals'):
+                if p == URIRef(
+                        'http://something/national-marine-planning-framework-policies#directsChapterTopicActivityProposals'):
                     self.NAMED_INDIVIDUALS[ni]['directsChapter'] = str(o)
 
             # patch title from URI if we haven't got one

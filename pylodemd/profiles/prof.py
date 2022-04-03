@@ -1,13 +1,14 @@
-from pylodemd import __version__
-from pylodemd.common import STYLE_DIR, TEMPLATES_DIR
 import collections
+import markdown
+from itertools import chain
+from jinja2 import Environment, FileSystemLoader
 from os import path
+from os.path import join
 from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import DC, DCTERMS, OWL, PROF, RDF, RDFS, SDO, SKOS
-from itertools import chain
-import markdown
-from jinja2 import Environment, FileSystemLoader
-from os.path import join
+
+from pylodemd import __version__
+from pylodemd.common import STYLE_DIR, TEMPLATES_DIR
 from pylodemd.profiles.base import BaseProfile
 
 

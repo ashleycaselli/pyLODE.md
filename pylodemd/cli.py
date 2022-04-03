@@ -1,11 +1,11 @@
 import argparse
-from sys import exit
 import sys
 from os.path import dirname, realpath
+from sys import exit
+
 sys.path.insert(0, dirname(dirname(realpath(__file__))))
 from pylodemd import RDF_FILE_EXTENSIONS, MakeDocco
 import logging
-
 
 # create logger
 logger = logging.getLogger(__name__)
@@ -37,8 +37,8 @@ def main(args=None):
         "-i",
         "--inputfile",
         help="The RDF ontology file you wish to generate HTML for. "
-        "Must be in either Turtle, RDF/XML, JSON-LD or N-Triples formats indicated by the file type extensions:"
-        "{} respectively.".format(", ".join(RDF_FILE_EXTENSIONS)),
+             "Must be in either Turtle, RDF/XML, JSON-LD or N-Triples formats indicated by the file type extensions:"
+             "{} respectively.".format(", ".join(RDF_FILE_EXTENSIONS)),
         type=lambda x: is_valid_file(parser, x),
     )
 
@@ -46,15 +46,15 @@ def main(args=None):
         "-u",
         "--url",
         help="The RDF ontology you wish to generate HTML for, online. "
-        "Must be an absolute URL that can be resolved to RDF, preferably via Content Negotiation.",
+             "Must be an absolute URL that can be resolved to RDF, preferably via Content Negotiation.",
     )
 
     overarching_group.add_argument(
         "-lp",
         "--listprofiles",
         help="This flag, if used, must be the only flag supplied. It will cause the program to list all the ontology"
-        " documentation profiles that it supports, indicating both their URI and their short token for use with the"
-        " -p (--profile) flag when creating HTML documentation",
+             " documentation profiles that it supports, indicating both their URI and their short token for use with the"
+             " -p (--profile) flag when creating HTML documentation",
         action="store_true",
     )
 
@@ -62,8 +62,8 @@ def main(args=None):
         "-p",
         "--profile",
         help="A profile - a specified information model - for an ontology. You can indicate this via the profile's URI"
-        "or its token. The list of profiles - URIs and their corresponding tokens - supported by pyLODE, can be "
-        "found by running the program with the flag -lp or --listprofiles.",
+             "or its token. The list of profiles - URIs and their corresponding tokens - supported by pyLODE, can be "
+             "found by running the program with the flag -lp or --listprofiles.",
         default="ontdoc",
     )
 

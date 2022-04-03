@@ -197,10 +197,10 @@ class BaseProfile:
             # and individuals (SDO.identifier)
             # exclude known annoying URIs (ORCID)
             if (
-                p == OWL.versionIRI
-                or p == OWL.imports
-                or p == SDO.identifier
-                or str(o).startswith("https://orcid")
+                    p == OWL.versionIRI
+                    or p == OWL.imports
+                    or p == SDO.identifier
+                    or str(o).startswith("https://orcid")
             ):
                 pass
             else:
@@ -246,7 +246,7 @@ class BaseProfile:
             else:
                 self.NAMESPACES[v] = k
 
-        del(self.NAMESPACES["xml"])  # that bloody XML namespace has to go!
+        del (self.NAMESPACES["xml"])  # that bloody XML namespace has to go!
 
     def _get_default_namespace(self):
         self.METADATA["default_namespace"] = None
@@ -274,9 +274,9 @@ class BaseProfile:
             default_uri = None
 
             for s in chain(
-                self.G.subjects(predicate=RDF.type, object=OWL.Ontology),
-                self.G.subjects(predicate=RDF.type, object=SKOS.ConceptScheme),
-                self.G.subjects(predicate=RDF.type, object=PROF.Profile)
+                    self.G.subjects(predicate=RDF.type, object=OWL.Ontology),
+                    self.G.subjects(predicate=RDF.type, object=SKOS.ConceptScheme),
+                    self.G.subjects(predicate=RDF.type, object=PROF.Profile)
             ):
                 default_uri = str(s)
 
@@ -307,7 +307,7 @@ class BaseProfile:
                 for_removal.append(k)
 
         for r in for_removal:
-            del(self.NAMESPACES[r])
+            del (self.NAMESPACES[r])
 
         return BaseProfile._load_template(self, "namespaces." + self.outputformat).render(
             namespaces=self.NAMESPACES,
@@ -531,7 +531,8 @@ class BaseProfile:
                 email = str(o).split("/")[-1].split("#")[-1]  # remove base URI leaving only email address
             elif p in [SDO.memberOf, SDO.affiliation]:
                 for p2, o2 in self.G.predicate_objects(subject=o):
-                    if p2 in [FOAF.homepage, SDO.identifier, SDO.url]:  # TODO: split homepage form IDs, cater for rdfs:seeAlso
+                    if p2 in [FOAF.homepage, SDO.identifier,
+                              SDO.url]:  # TODO: split homepage form IDs, cater for rdfs:seeAlso
                         org_url = str(o2)
                     elif p2 in [FOAF.name, SDO.name]:
                         org_name = str(o2)
@@ -580,8 +581,8 @@ class BaseProfile:
             return """# Empty pyLODE output (Markdown)"""
         else:  # HTML
             return """<!DOCTYPE html>""" \
-                """<html lang="en">""" \
-                """ <body>""" \
-                """     <h1>Empty pyLODE output (HTML)</h1>""" \
-                """</body>""" \
-                """</html>"""
+                   """<html lang="en">""" \
+                   """ <body>""" \
+                   """     <h1>Empty pyLODE output (HTML)</h1>""" \
+                   """</body>""" \
+                   """</html>"""

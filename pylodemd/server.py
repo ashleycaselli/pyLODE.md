@@ -1,7 +1,8 @@
-from bs4 import BeautifulSoup as Soup
-import falcon
 import os
 import subprocess
+
+import falcon
+from bs4 import BeautifulSoup as Soup
 
 
 class InfoResource:

@@ -1,13 +1,14 @@
-from pylodemd import __version__
-from pylodemd.common import STYLE_DIR, TEMPLATES_DIR
 import collections
+import markdown
+from itertools import chain
+from jinja2 import Environment, FileSystemLoader
 from os import path
+from os.path import join
 from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import DC, DCTERMS, DOAP, OWL, PROV, RDF, RDFS, SDO, SKOS
-from itertools import chain
-import markdown
-from jinja2 import Environment, FileSystemLoader
-from os.path import join
+
+from pylodemd import __version__
+from pylodemd.common import STYLE_DIR, TEMPLATES_DIR
 from pylodemd.profiles.base import BaseProfile
 
 
@@ -129,7 +130,6 @@ class VocPub(BaseProfile):
                         only_bn = False
                 if only_bn:
                     self.G.add((s2, SKOS.topConceptOf, s))
-
 
         # SKOS -> SKOS
         # broader / narrower buildout
@@ -510,10 +510,11 @@ class VocPub(BaseProfile):
 
     def _make_concept_hierarchy(self):
         of = self.outputformat
+
         # render concept
         def _render(c, children, of, level=0):
             if of == "md":
-                md = level*"\t" + "* " + self._make_formatted_uri(c, type="con")
+                md = level * "\t" + "* " + self._make_formatted_uri(c, type="con")
                 if len(children) > 0:
                     for ch in sorted(children):
                         md += _render(ch, self.CONCEPTS.get(ch).get("narrowers"), of, level=level + 1)

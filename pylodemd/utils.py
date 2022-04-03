@@ -28,7 +28,6 @@ from dominate.tags import (
 )
 from dominate.util import raw
 from rdflib import BNode, Literal, Graph, URIRef
-from rdflib.paths import ZeroOrMore
 from rdflib.namespace import (
     DC,
     DCTERMS,
@@ -41,6 +40,7 @@ from rdflib.namespace import (
     SKOS,
     VANN
 )
+from rdflib.paths import ZeroOrMore
 
 try:
     from .rdf_elements import AGENT_PROPS, ONTDOC, ONT_TYPES, \
@@ -86,9 +86,9 @@ def get_ns(ont: Graph) -> Tuple[str, str]:
         default_iri = None
 
         for s_ in chain(
-            ont.subjects(predicate=RDF.type, object=OWL.Ontology),
-            ont.subjects(predicate=RDF.type, object=SKOS.ConceptScheme),
-            ont.subjects(predicate=RDF.type, object=PROF.Profile),
+                ont.subjects(predicate=RDF.type, object=OWL.Ontology),
+                ont.subjects(predicate=RDF.type, object=SKOS.ConceptScheme),
+                ont.subjects(predicate=RDF.type, object=PROF.Profile),
         ):
             default_iri = str(s_)
 
@@ -717,7 +717,7 @@ def prop_obj_pair_html(
     prop = a(
         str(property_title).title(),
         title=str(property_description).rstrip(".") +
-        ". Defined in " + str(ont_title),
+              ". Defined in " + str(ont_title),
         _class="hover_property",
         href=str(prop_iri),
     )
