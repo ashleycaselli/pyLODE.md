@@ -1,5 +1,4 @@
-[]({{ fid }})
-### {{ title }}
+### {{ title }} <sup>{{ property_type }}</sup>
 Property | Value
 --- | ---
 URI | `{{ uri }}`

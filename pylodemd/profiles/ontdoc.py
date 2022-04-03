@@ -206,11 +206,11 @@ class OntDoc(BaseProfile):
             if self.PROPERTIES.get(uri):
                 title = self.PROPERTIES[uri]["title"] \
                     if self.PROPERTIES[uri].get("title") is not None else self.PROPERTIES[uri]["fid"]
-                uri = self.PROPERTIES[uri]["fid"]
+                uri = self.PROPERTIES[uri]["fid"].lower() + "-" + self.PROPERTIES[uri]["prop_type"]
             elif self.CLASSES.get(uri):
                 title = self.CLASSES[uri]["title"] \
                     if self.CLASSES[uri].get("title") is not None else self.CLASSES[uri]["fid"]
-                uri = self.CLASSES[uri]["fid"]
+                uri = self.CLASSES[uri]["fid"].lower() + "-c"
 
             links = {
                 "md": f"[{title}](#{uri})",
@@ -1007,7 +1007,7 @@ class OntDoc(BaseProfile):
 
         return self._load_template("property." + self.outputformat).render(
             uri=property[0],
-            fid=property[1].get("fid"),
+            fid=property[1].get("fid").lower(),
             property_type=property[1].get("prop_type"),
             title=property[1].get("title"),
             description=desc,
@@ -1027,61 +1027,25 @@ class OntDoc(BaseProfile):
 
     def _make_properties(self):
         # make all properties, grouped by OWL type
-        op_instances = []
-        fp_instances = []
-        dp_instances = []
-        ap_instances = []
-        p_instances = []
+        instances = {"op": [], "fp": [], "dp": [], "ap": [], "p": []}
 
         for k, v in self.PROPERTIES.items():
-            if v.get("prop_type") == "op":
-                op_instances.append(
-                    (
-                        v["title"],
-                        v["fid"],
-                        self._make_property((k, v)),
-                    )
+            prop_type = v.get("prop_type")
+            instances[prop_type].append(
+                (
+                    v["title"],
+                    v["fid"].lower() + "-" + prop_type,
+                    self._make_property((k, v))
                 )
-            elif v.get("prop_type") == "fp":
-                fp_instances.append(
-                    (
-                        v["title"],
-                        v["fid"],
-                        self._make_property((k, v)),
-                    )
-                )
-            elif v.get("prop_type") == "dp":
-                dp_instances.append(
-                    (
-                        v["title"],
-                        v["fid"],
-                        self._make_property((k, v)),
-                    )
-                )
-            elif v.get("prop_type") == "ap":
-                ap_instances.append(
-                    (
-                        v["title"],
-                        v["fid"],
-                        self._make_property((k, v)),
-                    )
-                )
-            elif v.get("prop_type") == "p":
-                p_instances.append(
-                    (
-                        v["title"],
-                        v["fid"],
-                        self._make_property((k, v)),
-                    )
-                )
+            )
 
         # make the template for all properties
         return self._load_template("properties." + self.outputformat).render(
-            op_instances=op_instances,
-            fp_instances=fp_instances,
-            dp_instances=dp_instances,
-            ap_instances=ap_instances,
-            p_instances=p_instances,
+            op_instances=instances["op"],
+            fp_instances=instances["fp"],
+            dp_instances=instances["dp"],
+            ap_instances=instances["ap"],
+            p_instances=instances["p"]
         )
 
     def _make_named_individual(self, named_individual):

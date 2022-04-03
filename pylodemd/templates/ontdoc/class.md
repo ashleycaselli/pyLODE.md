@@ -1,4 +1,4 @@
-### {{ title }}
+### {{ title }} <sup>c</sup>
 Property | Value
 --- | ---
 URI | `{{ uri }}`
