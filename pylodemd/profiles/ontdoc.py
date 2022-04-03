@@ -1,13 +1,14 @@
 import collections
-import markdown
 import re
 from itertools import chain
-from jinja2 import Environment, FileSystemLoader
 from os import path
 from os.path import join
+from typing import Union
+
+import markdown
+from jinja2 import Environment, FileSystemLoader
 from rdflib import URIRef, BNode, Literal
 from rdflib.namespace import DC, DCTERMS, DOAP, OWL, PROF, PROV, RDF, RDFS, SDO, SKOS
-from typing import Union
 
 from pylodemd import __version__
 from pylodemd.common import TEMPLATES_DIR, STYLE_DIR
@@ -985,7 +986,13 @@ class OntDoc(BaseProfile):
         #     [(v.get("fid"), v.get("title")) for k, v in self.CLASSES.items()],
         #     key=lambda tup: tup[1],
         # )
-        class_index = [f"<li>{self._make_formatted_uri(x)}</li>" for x in self.CLASSES.keys()]
+        if self.outputformat == "md":
+            class_index = [f"* {self._make_formatted_uri(x)}" for x in self.CLASSES.keys()]
+        elif self.outputformat == "adoc":
+            class_index = [f"* {self._make_formatted_uri(x)}" for x in self.CLASSES.keys()]
+        else:
+            class_index = [f"<li>{self._make_formatted_uri(x)}</li>" for x in self.CLASSES.keys()]
+
         return classes_template.render(class_index=class_index, classes=classes_list, )
 
     def _make_property(self, property):
