@@ -1,3 +1,15 @@
+### [1.0.1](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.0...1.0.1) (2022-04-03)
+
+
+### General maintenance
+
+* **examples:** update the example generator with the right package name ([01855dd](https://github.com/ashleycaselli/pyLODE.md/commit/01855ddcd6bdefeafcf00cda210f607a8a4c7caa))
+
+
+### Dependency updates
+
+* **core-deps:** update rdflib version ([39e817c](https://github.com/ashleycaselli/pyLODE.md/commit/39e817c2912f52b3f410c4038f6bed93b7e871d9))
+
 ## 1.0.0 (2022-04-03)
 
 
