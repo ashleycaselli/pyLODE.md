@@ -565,8 +565,8 @@ class BaseProfile:
         else:
             uri_of_rdf = self.source_info[0].split("/")[-1]
         if self.outputformat == "md":
-            return 'RDF ([{}]({}))'.format(
-                uri_of_rdf, self.source_info[1]
+            return '[RDF ({})]({})'.format(
+                self.source_info[1], uri_of_rdf
             )
         if self.outputformat == "adoc":
             return 'RDF link:{}[{}]'.format(
