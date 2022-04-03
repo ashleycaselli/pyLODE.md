@@ -85,16 +85,16 @@
 1. [Classes](#classes)
 {%- endif %}
 {%- if has_ops %}
-1. [Object Properties](#objectproperties)
+1. [Object Properties](#object-properties)
 {%- endif %}
 {%- if has_fps %}
-1. [Functional Properties](#functionalproperties)
+1. [Functional Properties](#functional-properties)
 {%- endif %}
 {%- if has_dps %}
-1. [Datatype Properties](#datatypeproperties)
+1. [Datatype Properties](#datatype-properties)
 {%- endif %}
 {%- if has_aps %}
-1. [Annotation Properties](#annotationproperties)
+1. [Annotation Properties](#annotation-properties)
 {%- endif %}
 {%- if has_ps %}
 1. [Properties](#properties)
