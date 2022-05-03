@@ -1,3 +1,21 @@
+### [1.0.2](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.1...1.0.2) (2022-05-03)
+
+
+### General maintenance
+
+* update renovate.json ([db9ead1](https://github.com/ashleycaselli/pyLODE.md/commit/db9ead100bf061b5921fb86c8b6e86ca3c3b62eb))
+
+
+### Build and continuous integration
+
+* update config for running in PR branches ([1a4deff](https://github.com/ashleycaselli/pyLODE.md/commit/1a4deff903a5982a2036ca3e0b3e76208ebe1701))
+
+
+### Dependency updates
+
+* **core-deps:** pin dependency rdflib to ==6.1.1 ([bdad6bf](https://github.com/ashleycaselli/pyLODE.md/commit/bdad6bfb14adbe2e0089d37b181bf3a9bc7cfccb))
+* **deps:** add renovate.json ([8b0dc68](https://github.com/ashleycaselli/pyLODE.md/commit/8b0dc68137625d70627369429cc34f7e7a43bc70))
+
 ### [1.0.1](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.0...1.0.1) (2022-04-03)
 
 
