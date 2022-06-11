@@ -1,3 +1,19 @@
+## [1.0.3](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.2...1.0.3) (2022-06-11)
+
+
+### Build and continuous integration
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.6 ([1d65b3d](https://github.com/ashleycaselli/pyLODE.md/commit/1d65b3d9c8dbafa3076cb43e82a066551af234d3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.7 ([8ec0e75](https://github.com/ashleycaselli/pyLODE.md/commit/8ec0e7595191b1e6312ebd6f5c3abba1ca331e80))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.8 ([70a78a3](https://github.com/ashleycaselli/pyLODE.md/commit/70a78a3fb3f9a1a28138e3fa5e6ca8368f8545b8))
+* **deps:** update docker/login-action action to v2 ([a18ce1e](https://github.com/ashleycaselli/pyLODE.md/commit/a18ce1ebe04995725fe082019be40f2d6923e6f1))
+* **deps:** update node.js to 16.15 ([fd78e71](https://github.com/ashleycaselli/pyLODE.md/commit/fd78e71d38b603423eef562bc9553ad4dd217d23))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency python to v3.10 ([42e44c3](https://github.com/ashleycaselli/pyLODE.md/commit/42e44c31aeaaceb0a53b7958950077ff5202e96d))
+
 ### [1.0.2](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.1...1.0.2) (2022-05-03)
 
 
