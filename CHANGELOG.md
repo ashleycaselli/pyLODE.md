@@ -1,3 +1,16 @@
+## [1.0.4](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.3...1.0.4) (2022-07-27)
+
+
+### Build and continuous integration
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.9 ([b661f94](https://github.com/ashleycaselli/pyLODE.md/commit/b661f940669d3ab0fe4dbebaed3eb2406653a065))
+* **deps:** update node.js to 16.16 ([f0d4517](https://github.com/ashleycaselli/pyLODE.md/commit/f0d4517e382c191cf47c5c11dbc08c40655b077b))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency rdflib to v6.2.0 ([db2cd06](https://github.com/ashleycaselli/pyLODE.md/commit/db2cd0644ab43eff8d8acf35fb85cfb7a2a56e98))
+
 ## [1.0.3](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.2...1.0.3) (2022-06-11)
 
 
