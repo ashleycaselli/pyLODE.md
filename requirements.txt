@@ -1,4 +1,4 @@
 jinja2
 markdown
-rdflib==6.1.1
+rdflib==6.2.0
 requests
