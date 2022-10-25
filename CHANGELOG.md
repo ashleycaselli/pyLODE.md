@@ -1,3 +1,20 @@
+## [1.0.5](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.4...1.0.5) (2022-10-25)
+
+
+### Build and continuous integration
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.10 ([c562814](https://github.com/ashleycaselli/pyLODE.md/commit/c5628145849ae8be47054d71e2f34d5e1233636e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.11 ([31155e9](https://github.com/ashleycaselli/pyLODE.md/commit/31155e916088edea3bb5c791ffa37730ceef9d62))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.12 ([ba7d170](https://github.com/ashleycaselli/pyLODE.md/commit/ba7d170eaa0172a127e085095598ba7cf5da9a7a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.13 ([9e02300](https://github.com/ashleycaselli/pyLODE.md/commit/9e023008358a7ab771e2a5c709c362479981ae40))
+* **deps:** update node.js to 16.17 ([0350370](https://github.com/ashleycaselli/pyLODE.md/commit/03503700db0465e45de65a6759a6efa7db502437))
+* **deps:** update node.js to 16.18 ([e5dc469](https://github.com/ashleycaselli/pyLODE.md/commit/e5dc46960f03515cb7e41d1707de1f2798eeae3e))
+
+
+### Dependency updates
+
+* **core-deps:** update python docker tag to v3.11 ([2a14130](https://github.com/ashleycaselli/pyLODE.md/commit/2a141300a48e50cc226afe940b2a32d481497f09))
+
 ## [1.0.4](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.3...1.0.4) (2022-07-27)
 
 
