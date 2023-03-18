@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.6...1.0.7) (2023-03-18)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency rdflib to v6.3.1 ([e50572c](https://github.com/ashleycaselli/pyLODE.md/commit/e50572c217802484de9f890d6090946f6a50d1a1))
+
 ## [1.0.6](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.5...1.0.6) (2023-03-16)
 
 
