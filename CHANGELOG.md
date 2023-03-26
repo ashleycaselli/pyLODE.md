@@ -1,3 +1,16 @@
+## [1.0.8](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.7...1.0.8) (2023-03-26)
+
+
+### Build and continuous integration
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.19 ([351cbf4](https://github.com/ashleycaselli/pyLODE.md/commit/351cbf4c70e8cb92cfed0ed3fd63485fa93845f0))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.20 ([febd6fc](https://github.com/ashleycaselli/pyLODE.md/commit/febd6fc973b330f309b46e36790147a94e970cbf))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency rdflib to v6.3.2 ([ebc1dde](https://github.com/ashleycaselli/pyLODE.md/commit/ebc1ddef74f36a17cb2b0a14562c612d2108fc3a))
+
 ## [1.0.7](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.6...1.0.7) (2023-03-18)
 
 
