@@ -1,3 +1,39 @@
+## [1.0.10](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.9...1.0.10) (2023-10-03)
+
+
+### Dependency updates
+
+* **core-deps:** update python docker tag to v3.12 ([9652867](https://github.com/ashleycaselli/pyLODE.md/commit/965286727e3d37c256cf12a6bc7da090a268757d))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4 ([403077e](https://github.com/ashleycaselli/pyLODE.md/commit/403077e00a755de2d145b9c92fe1ff284ca45568))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.44 ([1735167](https://github.com/ashleycaselli/pyLODE.md/commit/17351676acc5212a17e7376d771af961c2c94098))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.46 ([81260a3](https://github.com/ashleycaselli/pyLODE.md/commit/81260a338eee82386bfa77fd309cd4d311f266ca))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.47 ([1e988e2](https://github.com/ashleycaselli/pyLODE.md/commit/1e988e2a763dcee63c7ab21cf3f903840120f186))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.48 ([abd557b](https://github.com/ashleycaselli/pyLODE.md/commit/abd557b266ed43307ecc3038d5566ed349818e31))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.50 ([1e484a7](https://github.com/ashleycaselli/pyLODE.md/commit/1e484a76ec888d646296cec35777cfd054b8dd37))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.51 ([55ef5cc](https://github.com/ashleycaselli/pyLODE.md/commit/55ef5cc44a8dc100b2700860c995de4028434a48))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.52 ([81c3c29](https://github.com/ashleycaselli/pyLODE.md/commit/81c3c29b8ac2c33cf92f0fd654e50241fd91e01b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.53 ([abf4460](https://github.com/ashleycaselli/pyLODE.md/commit/abf44607c0b60f198392c4da0e342e972ab69394))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.54 ([6d29098](https://github.com/ashleycaselli/pyLODE.md/commit/6d290988efb93945d7051d3c79640110dce226d5))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.55 ([976a307](https://github.com/ashleycaselli/pyLODE.md/commit/976a30760049347ef05b8b36ccbeca995fbd2853))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.56 ([01f9899](https://github.com/ashleycaselli/pyLODE.md/commit/01f989937edde378546a2c757984867e70900760))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.58 ([1d9cd89](https://github.com/ashleycaselli/pyLODE.md/commit/1d9cd89eef52d5ed7fc54463f9dfeaa3bc3cc2b8))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.59 ([cf7f9b4](https://github.com/ashleycaselli/pyLODE.md/commit/cf7f9b422527c11032c7a991c43b635e885a1782))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.60 ([5f7d893](https://github.com/ashleycaselli/pyLODE.md/commit/5f7d8932f973d46eb8dffff1787132c931632473))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.61 ([42d32ff](https://github.com/ashleycaselli/pyLODE.md/commit/42d32ff804c20197ca40f2f6f7cc346a80a35d16))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.62 ([4566cab](https://github.com/ashleycaselli/pyLODE.md/commit/4566cab113cb5037b2609b3ef621433f59cca226))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.63 ([4b1dbcb](https://github.com/ashleycaselli/pyLODE.md/commit/4b1dbcbbd796b6f86cf7013217062c4dac2dffc6))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.64 ([6d78cd6](https://github.com/ashleycaselli/pyLODE.md/commit/6d78cd68f1f23e51d1910c718d7c1c96fd3a9a43))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.65 ([818a695](https://github.com/ashleycaselli/pyLODE.md/commit/818a695ef85a60927d12f9dc61cded5bd58731f0))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.66 ([2ac3853](https://github.com/ashleycaselli/pyLODE.md/commit/2ac3853ef78a3fb247ccec03dfe3ce4abe1bab85))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.67 ([021128a](https://github.com/ashleycaselli/pyLODE.md/commit/021128a2c80dfa15a2b02bccb16f8bbf80ab78cf))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.68 ([aba5baa](https://github.com/ashleycaselli/pyLODE.md/commit/aba5baa06dfa8b15e994c4565409fe6e1197468b))
+* **deps:** update docker/login-action action to v3 ([77fdb59](https://github.com/ashleycaselli/pyLODE.md/commit/77fdb594d6b042c8ef04c3c0fecb41a693174c04))
+* **deps:** update node.js to 18.18 ([aa44791](https://github.com/ashleycaselli/pyLODE.md/commit/aa4479132b10bdc1d6090de53cebed4d39bf6993))
+
 ## [1.0.9](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.8...1.0.9) (2023-08-02)
 
 
