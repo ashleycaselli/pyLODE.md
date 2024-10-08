@@ -1,4 +1,4 @@
-ARG PYTHON_VERSION=3.12-slim
+ARG PYTHON_VERSION=3.13-slim
 FROM python:$PYTHON_VERSION
 
 MAINTAINER pyLODE.md Developers <https://github.com/ashleycaselli/pyLODE.md/graphs/contributors>
