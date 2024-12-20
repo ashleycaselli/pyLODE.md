@@ -1,3 +1,48 @@
+## [1.0.11](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.10...1.0.11) (2024-12-20)
+
+### Dependency updates
+
+* **core-deps:** update dependency rdflib to v7.1.0 ([ce39b02](https://github.com/ashleycaselli/pyLODE.md/commit/ce39b029ef0bbae14145c3401c637f674bb2f08d))
+* **core-deps:** update dependency rdflib to v7.1.1 ([5c008a6](https://github.com/ashleycaselli/pyLODE.md/commit/5c008a6d338714f840efdf0e6999d8fb2378edfc))
+* **core-deps:** update python docker tag to v3.13 ([a3f31cd](https://github.com/ashleycaselli/pyLODE.md/commit/a3f31cdf0258e8e0600beba47ebc0dce467383bb))
+* **deps:** update dependency rdflib to v7 ([60630f9](https://github.com/ashleycaselli/pyLODE.md/commit/60630f92ce3c90216fd251e9385addb40dcce2d6))
+
+### Build and continuous integration
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.117 ([#108](https://github.com/ashleycaselli/pyLODE.md/issues/108)) ([e7ff80f](https://github.com/ashleycaselli/pyLODE.md/commit/e7ff80fe006a60130030708f21848d294dcbcab4))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.69 ([24aea48](https://github.com/ashleycaselli/pyLODE.md/commit/24aea480da5a78abce2f9db3b7c3d6f51d86e06c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.70 ([8e05410](https://github.com/ashleycaselli/pyLODE.md/commit/8e05410b6f9ad430365c1050b49afb910fddf0cc))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.71 ([39e392b](https://github.com/ashleycaselli/pyLODE.md/commit/39e392b5262b519c531ca95feb358c88d4207bbc))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.72 ([7a143a7](https://github.com/ashleycaselli/pyLODE.md/commit/7a143a74aa1d5d6f32d72f745e7ecc0fa2bb9cbd))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.73 ([a28bfaa](https://github.com/ashleycaselli/pyLODE.md/commit/a28bfaa8e92049d04247587e290db931254540ca))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.74 ([5464440](https://github.com/ashleycaselli/pyLODE.md/commit/5464440cd7f2a246112d71f9cb1279d1df1d5e2e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.75 ([c7f2dc3](https://github.com/ashleycaselli/pyLODE.md/commit/c7f2dc3a14ef3456ac8874c17ae60f6f91edbe77))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.76 ([e4398d8](https://github.com/ashleycaselli/pyLODE.md/commit/e4398d8d3f687de450c8b3bfca317cfe33c141fb))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.77 ([7b01df0](https://github.com/ashleycaselli/pyLODE.md/commit/7b01df08bfe8bce161a1b9fbbd76d0fd62102ef8))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.78 ([277aaa3](https://github.com/ashleycaselli/pyLODE.md/commit/277aaa388011de5dd37908db4e2fb85b75f5ba40))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.79 ([6e3afc3](https://github.com/ashleycaselli/pyLODE.md/commit/6e3afc31b01152579ed3591f4bf7d36b36715847))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.80 ([958ed5e](https://github.com/ashleycaselli/pyLODE.md/commit/958ed5e90701ddfff13f0cced1929ed8538c88fa))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.81 ([aec41ad](https://github.com/ashleycaselli/pyLODE.md/commit/aec41ad72b90d87e644c42a31e1da61b60ac5bc3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.82 ([e809216](https://github.com/ashleycaselli/pyLODE.md/commit/e809216ba478465aa2c2431a7dfa56b93c077e8c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.83 ([fbbdb73](https://github.com/ashleycaselli/pyLODE.md/commit/fbbdb73a9fec74e1e9690a6dd3c02e4c15fa1db3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.84 ([3b1e0b3](https://github.com/ashleycaselli/pyLODE.md/commit/3b1e0b348dca5f8960f08db4d609157d4eef05e4))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.85 ([a8d7469](https://github.com/ashleycaselli/pyLODE.md/commit/a8d74690db34a13870f2a786e801bbbbbb4c2a19))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.86 ([a4aa87f](https://github.com/ashleycaselli/pyLODE.md/commit/a4aa87f60cdc5a541217f9672b99e47bbb4817f1))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.87 ([40c013e](https://github.com/ashleycaselli/pyLODE.md/commit/40c013e6805f85964cc0d84c103de683058746d4))
+* **deps:** update node.js to 20.10 ([8416284](https://github.com/ashleycaselli/pyLODE.md/commit/84162844cb749d8d29136c7611c3691874e5d0b9))
+* **deps:** update node.js to 20.11 ([afa2ed1](https://github.com/ashleycaselli/pyLODE.md/commit/afa2ed1bfd77a75b6ce859bde90fe214c1066980))
+* **deps:** update node.js to 20.12 ([5bd30e4](https://github.com/ashleycaselli/pyLODE.md/commit/5bd30e442ca172c02555c9b1fbd89a661eac026e))
+* **deps:** update node.js to 20.13 ([6678ffa](https://github.com/ashleycaselli/pyLODE.md/commit/6678ffabaef1a544c7267536f18424a2eccea2ed))
+* **deps:** update node.js to 20.14 ([a468f9e](https://github.com/ashleycaselli/pyLODE.md/commit/a468f9e590ec6e8c7769b003a5ca8f3ebcd8eb33))
+* **deps:** update node.js to 20.15 ([d79282b](https://github.com/ashleycaselli/pyLODE.md/commit/d79282b6ec0a0a83272c1dcbfc21a19b9ee7b84a))
+* **deps:** update node.js to 20.16 ([a23184a](https://github.com/ashleycaselli/pyLODE.md/commit/a23184ab8724a07212f32bd8443a0faf80b0b269))
+* **deps:** update node.js to 20.17 ([2ba80df](https://github.com/ashleycaselli/pyLODE.md/commit/2ba80df5ff2c2fe88b4fca0bd3c8ca03265b84cb))
+* **deps:** update node.js to 20.18 ([ccc6629](https://github.com/ashleycaselli/pyLODE.md/commit/ccc66295609fd01c9fe3d40e6406e629a26087e2))
+* **deps:** update node.js to 20.9 ([9b55b11](https://github.com/ashleycaselli/pyLODE.md/commit/9b55b11f8e396166ebaa6d67312dfcb5d04303c8))
+* **deps:** update node.js to 22.12 ([#116](https://github.com/ashleycaselli/pyLODE.md/issues/116)) ([6568de8](https://github.com/ashleycaselli/pyLODE.md/commit/6568de85aad8bdb4c55c4468894f560fa518a861))
+* **deps:** update node.js to v20 ([fa1eeea](https://github.com/ashleycaselli/pyLODE.md/commit/fa1eeea484abdca43e359a4fce0e7e17abc3303d))
+* **deps:** update node.js to v22 ([42d6368](https://github.com/ashleycaselli/pyLODE.md/commit/42d636878beb98e87daabb65addeccc0375ae3da))
+
 ## [1.0.10](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.9...1.0.10) (2023-10-03)
 
 
