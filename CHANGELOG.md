@@ -1,3 +1,15 @@
+## [1.0.12](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.11...1.0.12) (2025-01-10)
+
+### Dependency updates
+
+* **core-deps:** update dependency rdflib to v7.1.2 ([#120](https://github.com/ashleycaselli/pyLODE.md/issues/120)) ([8d0cd65](https://github.com/ashleycaselli/pyLODE.md/commit/8d0cd65ce31876681248506adb4d0d90bae0cd3d))
+
+### Build and continuous integration
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.118 ([#117](https://github.com/ashleycaselli/pyLODE.md/issues/117)) ([b661bbd](https://github.com/ashleycaselli/pyLODE.md/commit/b661bbd5bbbc39467055891bbb22a80715fa9b76))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.119 ([#119](https://github.com/ashleycaselli/pyLODE.md/issues/119)) ([bfdda43](https://github.com/ashleycaselli/pyLODE.md/commit/bfdda43a3d6cc8258d468d03540426f544f4ac5a))
+* **deps:** update node.js to 22.13 ([#118](https://github.com/ashleycaselli/pyLODE.md/issues/118)) ([fbfb5db](https://github.com/ashleycaselli/pyLODE.md/commit/fbfb5db6c9a885f2da4407b8539f4919e58b5300))
+
 ## [1.0.11](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.10...1.0.11) (2024-12-20)
 
 ### Dependency updates
