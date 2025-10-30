@@ -1,3 +1,13 @@
+## [1.0.18](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.17...1.0.18) (2025-10-30)
+
+### Dependency updates
+
+* **core-deps:** update dependency rdflib to v7.4.0 ([#168](https://github.com/ashleycaselli/pyLODE.md/issues/168)) ([30be0a4](https://github.com/ashleycaselli/pyLODE.md/commit/30be0a49ee3887dac3a7e4c948238886f9dc4f3c))
+
+### Build and continuous integration
+
+* **deps:** update node.js to v24 ([#167](https://github.com/ashleycaselli/pyLODE.md/issues/167)) ([03b128d](https://github.com/ashleycaselli/pyLODE.md/commit/03b128d7864c8a336d0599209f1f82333f24e16d))
+
 ## [1.0.17](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.16...1.0.17) (2025-10-24)
 
 ### Dependency updates
