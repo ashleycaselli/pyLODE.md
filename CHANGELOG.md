@@ -1,3 +1,14 @@
+## [1.0.19](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.18...1.0.19) (2025-11-28)
+
+### Dependency updates
+
+* **core-deps:** update dependency rdflib to v7.5.0 ([#171](https://github.com/ashleycaselli/pyLODE.md/issues/171)) ([54b5522](https://github.com/ashleycaselli/pyLODE.md/commit/54b552285f0035949c588430d20b64070115a77d))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v5.0.1 ([#169](https://github.com/ashleycaselli/pyLODE.md/issues/169)) ([bae05ac](https://github.com/ashleycaselli/pyLODE.md/commit/bae05acef9fff221271661495d69926f8d77df94))
+* **deps:** update actions/checkout action to v6 ([#170](https://github.com/ashleycaselli/pyLODE.md/issues/170)) ([24599fb](https://github.com/ashleycaselli/pyLODE.md/commit/24599fb1e7700c7a8dde934ca14aaeb33b3e720f))
+
 ## [1.0.18](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.17...1.0.18) (2025-10-30)
 
 ### Dependency updates
