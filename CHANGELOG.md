@@ -1,3 +1,17 @@
+## [1.0.20](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.19...1.0.20) (2026-02-13)
+
+### Dependency updates
+
+* **core-deps:** update dependency rdflib to v7.6.0 ([#177](https://github.com/ashleycaselli/pyLODE.md/issues/177)) ([6395d17](https://github.com/ashleycaselli/pyLODE.md/commit/6395d17b184e8b62165614b25be809f107cfd186))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v6.0.1 ([#172](https://github.com/ashleycaselli/pyLODE.md/issues/172)) ([55524c8](https://github.com/ashleycaselli/pyLODE.md/commit/55524c814007f82e6f3bf21dfd404b4570ee3d92))
+* **deps:** update actions/checkout action to v6.0.2 ([#175](https://github.com/ashleycaselli/pyLODE.md/issues/175)) ([556297b](https://github.com/ashleycaselli/pyLODE.md/commit/556297bd251eae99c73b394210b26dd57f04fd72))
+* **deps:** update docker/login-action action to v3.7.0 ([#176](https://github.com/ashleycaselli/pyLODE.md/issues/176)) ([ac92901](https://github.com/ashleycaselli/pyLODE.md/commit/ac92901ecdb3d3ca323372aadac8ff699a53a59b))
+* **deps:** update node.js to 24.12 ([#173](https://github.com/ashleycaselli/pyLODE.md/issues/173)) ([fefe825](https://github.com/ashleycaselli/pyLODE.md/commit/fefe825415a0e2ae6b8e5b0ca6afbd13f2a7dc09))
+* **deps:** update node.js to 24.13 ([#174](https://github.com/ashleycaselli/pyLODE.md/issues/174)) ([1b24ed9](https://github.com/ashleycaselli/pyLODE.md/commit/1b24ed9a79c3ee0fa710a6c54df463823a02b332))
+
 ## [1.0.19](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.18...1.0.19) (2025-11-28)
 
 ### Dependency updates
