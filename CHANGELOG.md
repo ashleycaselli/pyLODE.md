@@ -1,3 +1,33 @@
+## [1.0.21](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.20...1.0.21) (2026-10-13)
+
+### Dependency updates
+
+* **core-deps:** update python docker tag to v3.15 ([#198](https://github.com/ashleycaselli/pyLODE.md/issues/198)) ([894ff82](https://github.com/ashleycaselli/pyLODE.md/commit/894ff820e3191a92fc18c9a7317f0d16f5b92b3e))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v6.0.3 ([#184](https://github.com/ashleycaselli/pyLODE.md/issues/184)) ([d23d42a](https://github.com/ashleycaselli/pyLODE.md/commit/d23d42af71cb4d876bd98ab04ac9cf19686c52a4))
+* **deps:** update actions/checkout action to v7 ([#186](https://github.com/ashleycaselli/pyLODE.md/issues/186)) ([cc810ab](https://github.com/ashleycaselli/pyLODE.md/commit/cc810abdd3312e949657adee2a91aa9352f2e287))
+* **deps:** update actions/checkout action to v7.0.1 ([#190](https://github.com/ashleycaselli/pyLODE.md/issues/190)) ([db1a9a1](https://github.com/ashleycaselli/pyLODE.md/commit/db1a9a144152854444559aadda1127b6a6c0b3cc))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.157 ([#164](https://github.com/ashleycaselli/pyLODE.md/issues/164)) ([6d51ea3](https://github.com/ashleycaselli/pyLODE.md/commit/6d51ea3c188eda43c8f693fafd150958a9b06470))
+* **deps:** update docker/login-action action to v4 ([#179](https://github.com/ashleycaselli/pyLODE.md/issues/179)) ([c11586a](https://github.com/ashleycaselli/pyLODE.md/commit/c11586a2c187ade4042586970fa3e9b8b4199a54))
+* **deps:** update docker/login-action action to v4.1.0 ([#180](https://github.com/ashleycaselli/pyLODE.md/issues/180)) ([4f22734](https://github.com/ashleycaselli/pyLODE.md/commit/4f22734506654d51320d28c5a7cfba009dec912e))
+* **deps:** update docker/login-action action to v4.2.0 ([#183](https://github.com/ashleycaselli/pyLODE.md/issues/183)) ([21d9db3](https://github.com/ashleycaselli/pyLODE.md/commit/21d9db331a8d66568588a9cab325dd4fb28d9dde))
+* **deps:** update docker/login-action action to v4.3.0 ([#188](https://github.com/ashleycaselli/pyLODE.md/issues/188)) ([4a22d93](https://github.com/ashleycaselli/pyLODE.md/commit/4a22d9398b20a2128b0d15c0943bc9563d773114))
+* **deps:** update docker/login-action action to v4.4.0 ([#189](https://github.com/ashleycaselli/pyLODE.md/issues/189)) ([cb74474](https://github.com/ashleycaselli/pyLODE.md/commit/cb74474ad10fc875a8b1c9e2347c249e3f67657d))
+* **deps:** update docker/login-action action to v4.5.0 ([#191](https://github.com/ashleycaselli/pyLODE.md/issues/191)) ([12c529a](https://github.com/ashleycaselli/pyLODE.md/commit/12c529a53441370133621a32c3aa2d68e04381a0))
+* **deps:** update docker/login-action action to v4.5.1 ([#192](https://github.com/ashleycaselli/pyLODE.md/issues/192)) ([a203797](https://github.com/ashleycaselli/pyLODE.md/commit/a2037971227b70deccb4372b404807db13d2dd9a))
+* **deps:** update docker/login-action action to v4.5.2 ([#193](https://github.com/ashleycaselli/pyLODE.md/issues/193)) ([2ef10a9](https://github.com/ashleycaselli/pyLODE.md/commit/2ef10a9cab2ab95fdd62dc5f6c1c844b4c963ff8))
+* **deps:** update docker/login-action action to v4.6.0 ([#194](https://github.com/ashleycaselli/pyLODE.md/issues/194)) ([ec5cba2](https://github.com/ashleycaselli/pyLODE.md/commit/ec5cba21ffa3d8783943f8a8e54daf509fb64b26))
+* **deps:** update node.js to 24.14 ([#178](https://github.com/ashleycaselli/pyLODE.md/issues/178)) ([33cd7b0](https://github.com/ashleycaselli/pyLODE.md/commit/33cd7b080259ad8e647abf4cd9474c3831091307))
+* **deps:** update node.js to 24.15 ([#181](https://github.com/ashleycaselli/pyLODE.md/issues/181)) ([36e2bcf](https://github.com/ashleycaselli/pyLODE.md/commit/36e2bcf222feb87801ba9dabe81777dc5e4c4d8c))
+* **deps:** update node.js to 24.16 ([#182](https://github.com/ashleycaselli/pyLODE.md/issues/182)) ([9e9b31d](https://github.com/ashleycaselli/pyLODE.md/commit/9e9b31debbc2c3ee273072963045fab388897223))
+* **deps:** update node.js to 24.17 ([#185](https://github.com/ashleycaselli/pyLODE.md/issues/185)) ([4c972d9](https://github.com/ashleycaselli/pyLODE.md/commit/4c972d9153439cbd8b36021fe16f5589a6146c53))
+* **deps:** update node.js to 24.18 ([#187](https://github.com/ashleycaselli/pyLODE.md/issues/187)) ([b2acde9](https://github.com/ashleycaselli/pyLODE.md/commit/b2acde9f167ec86f9148e21f914ccd08493f161f))
+* **deps:** update node.js to 24.19 ([#195](https://github.com/ashleycaselli/pyLODE.md/issues/195)) ([6a55b2b](https://github.com/ashleycaselli/pyLODE.md/commit/6a55b2b3a1e821e8b420e3b26d0d18ccb95a8922))
+* **deps:** update node.js to 24.20 ([#196](https://github.com/ashleycaselli/pyLODE.md/issues/196)) ([1123621](https://github.com/ashleycaselli/pyLODE.md/commit/1123621281301461ef12dabece0999eb05018136))
+* **deps:** update node.js to 24.21 ([#197](https://github.com/ashleycaselli/pyLODE.md/issues/197)) ([1964bc7](https://github.com/ashleycaselli/pyLODE.md/commit/1964bc768b55dfb8178f3dc7b679d6b8b6038f42))
+
 ## [1.0.20](https://github.com/ashleycaselli/pyLODE.md/compare/1.0.19...1.0.20) (2026-02-13)
 
 ### Dependency updates
